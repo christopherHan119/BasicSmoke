@@ -97,6 +97,10 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)freeglut\bin\$(Platform)\freeglut.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"
+copy "$(SolutionDir)glew\bin\glew32.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -113,6 +117,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)freeglut\bin\$(Platform)\freeglut.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"
+copy "$(SolutionDir)glew\bin\glew32.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -125,6 +133,10 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)freeglut\bin\$(Platform)\freeglut.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"
+copy "$(SolutionDir)glew\bin\glew32.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -141,6 +153,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)freeglut\bin\$(Platform)\freeglut.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"
+copy "$(SolutionDir)glew\bin\glew32.dll" "$(SolutionDir)\$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />
